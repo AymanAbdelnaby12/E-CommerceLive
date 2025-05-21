@@ -62,7 +62,7 @@
         let data = ``;
         for (let i = 0; i < currentDisplayed.length; i++){
             data += ` 
-                <div class="col-12 col-sm-6 col-md-3 col-lg-4 align-items-stretch mt-5">
+                <div class="col-12  col-md-6 col-lg-4 align-items-stretch mt-5">
                     <div class="card h-100">
                         <div class="image-container bg-light p-2">
                             <img src="${currentDisplayed[i].image}" alt="Product" class="img-fluid">
