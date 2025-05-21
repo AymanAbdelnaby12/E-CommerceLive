@@ -1,0 +1,213 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color: #f5f7f9;
+}
+
+
+ .btn-primary
+{
+    background-color: #D10024e6;
+    color: white;
+    border: solid 1px #D10024e6;
+    border-color:red ;
+    border-radius: 25px;
+    
+   }
+  .btn-primary:hover
+   {
+       border-color:red ;
+       background-color: #fff;
+       color: red;
+   }
+ #searchButton
+   {
+       border-color: #D10024e6;
+       background-color: #D10024e6;
+       color: #fff !important
+   }
+
+ .nav-item a:hover
+{
+   color: #D10024e6 !important;
+}
+.navbar .nav-item 
+{
+   position: relative;
+}
+.navbar .nav-item a
+{
+   font-size: 1.3rem;
+   font-weight: 600;
+   color: #fff !important;
+}
+.navbar .nav-item a::after 
+{
+   content: '';
+   position: absolute;
+   /* top:0; */
+   left: -4%;
+   bottom: 0;
+   width: 70%;
+   height: 3px;
+   background-color: #D10024e6;
+   opacity: 0;
+   transition: all .3s ease-in-out;
+}
+.navbar .nav-item a:hover::after
+{
+   opacity: 1;
+   left: -5%; 
+    transform: translateX(13px);
+}
+.navbar .nav-item span
+{
+   width: 20px;
+   height: 20px;
+   background-color: #D10024e6 !important;
+}
+.collapse
+{
+   background-color: #15161D !important;
+}
+nav
+{
+   background-color: #15161D !important;
+}
+.navbar-brand
+{
+    color: #fff !important;
+}
+.navbar-toggler
+{
+    
+    background-color: #fff;
+}
+.card p
+{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#userNameEmailLogin,#password,#loginPasswrod,#userNameEmail,#companyName,#streetName,#apartment,#town,#phone,#emailAddress
+{
+    box-shadow: none;
+    border-color:#ced4da;
+}
+.inputBody
+{
+    width: 47% !important;
+}
+.inputBody label 
+{
+    font-size: 18px;
+    font-weight: 600;
+}
+.bilingBodyFirst
+{
+    width: 47%;
+}
+.bilingBody label
+{
+    font-size: 18px;
+    font-weight: 600;
+}
+form span a
+{
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+}
+form span a:hover
+{
+    color: rgb(7, 164, 226);
+}
+
+#couponBtn
+{
+    width: 200px;
+}
+.bilingBody
+{
+    width: 75% ;
+}
+.textAreaDiv
+{
+    border-top: solid 1px #ced4da;
+}
+.textAreaDiv
+{
+    font-size: 14px;
+    font-weight: 400;
+}
+.bilingBorder
+{
+    border: solid 1px #ced4da;
+}
+.bilingBorder h2
+{
+    font-size: 25px;
+    color: black;
+}
+.bilingBody h3
+{
+    font-size: 20px;
+}
+.bilingBodyDetail
+{
+    width: 47%;
+}
+.bilingBodyDetail .card
+{
+    background-color: #efefef !important;
+    border: none;
+}
+.payment-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: transparent;
+    border-radius: 8px;
+    transition: all .5s;
+}
+.payment-description {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #efefef;
+    display: none; /* Hidden by default */
+}
+.payment-logo {
+    width: 150px;
+    margin-left: 10px;
+}
+
+footer
+{
+    background-color: #15161D;
+    color: #fff;
+}
+footer i
+{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+footer i:hover
+{
+    color: #D10024e6;
+}
+footer ul,h5,h6
+{
+    font-size: 23px;
+}
+
+footer .list-unstyled li a
+{
+    transition: all .4s;
+    
+    color: rgb(176, 174, 174);
+}
+footer .list-unstyled li a:hover
+{
+    color: #D10024e6;
+}

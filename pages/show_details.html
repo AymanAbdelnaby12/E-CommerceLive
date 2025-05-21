@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product Details</title>
+    
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/media.css">
+   
+   <style>
+        .nav-tabs .nav-link {
+            color: black;
+        }
+  
+.navbar .nav-item a:hover
+{
+   color: #D10024e6 !important;
+}
+.navbar .nav-item 
+{
+   position: relative;
+}
+.navbar .nav-item a
+{
+   font-size: 1.3rem;
+   font-weight: 600;
+}
+.navbar .nav-item a::after 
+{
+   content: '';
+   position: absolute;
+   /* top:0; */
+   left: -4%;
+   bottom: 0;
+   width: 70%;
+   height: 3px;
+   background-color: #D10024e6;
+   opacity: 0;
+   transition: all .3s ease-in-out;
+}
+.navbar .nav-item a:hover::after
+{
+   opacity: 1;
+   left: -5%; 
+    transform: translateX(13px);
+}
+.navbar .nav-item span
+{
+   width: 20px;
+   height: 20px;
+   background-color: #D10024e6 !important;
+}
+.collapse
+{
+   background-color: #15161D !important;
+}
+
+       
+    </style>
+</head>
+<body>
+  <header class="container-fluid bg-secondary p-4 hero  mb-2"> 
+    <!-- navbar Section --> 
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">UltraWave</a>
+        <button class="navbar-toggler" type="button" style="background-color: #fff;" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-2 py-2 text-md-start text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link Categories" href="#"  data-category="laptop">laptop</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link Categories" href="#" data-category="mobile">Mobile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link Categories" href="#" data-category="gaming">Gaming</a></li> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link Categories" href="#" data-category="appliances">appliances</a></li> 
+            </li>
+          
+          </ul>
+          <form class="d-flex my-1" role="search">
+            <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" id="searchButton"  type="submit">Search</button> 
+          </form>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="pages/about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="pages/contact.html">Contact Us</a>
+            </li>
+            
+          </ul>
+          <!-- start cart --> 
+          <a href="../pages/Cart.html" class="btn btn-primary position-relative ms-2 my-2 py-2">
+          <i class="fa fa-shopping-cart"></i> Cart
+          <span id="cartCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span>
+          </a>
+          <!-- end cart --> 
+        </div>
+      </div>
+    </nav>
+  </header> 
+    <section class="container mt-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+              <img src="" class="img-fluid" alt="img" id="img_product">
+          </div>
+          <div class="col-lg-6 col-md-12">
+              <div >
+              
+                  <ul class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a class="text-secondary text-decoration-none "  href="../index.html"> Home </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a class="text-secondary text-decoration-none" href="#" id="catogry_1"> </a>
+                    </li>
+                    <li class="breadcrumb-item ">
+                      <a class="text-secondary text-decoration-none" href="#" id="name" ></a>
+                    </li>
+                  
+                  </ul>
+                </div>
+
+                <div>
+                  <p id="catogry_2"></p>
+                  
+                  <h1 class="pb-3" id="product_name2"></h1>
+                  <div>
+                      <span class="fw-bold" id="price"></span>
+                      <span class="text-secondary">+ Free Shipping</span>
+                    
+                      <p class="py-3 text-secondary">
+                         
+                        </p>
+                  </div>
+                </div>
+    <div class="d-flex">        
+  <input type="number" class="form-control me-3" value="1" style="width: 100px;" >
+
+  <button  class="btn btn-primary " style="width: 300px;" id="cardButton">Add To Cart</button>
+
+  </div> 
+  <hr>
+  <div>
+      <span class="text-secondary">Category:  </span>
+      <span class="" id="catogry"> Men</span>
+      
+  </div>
+  <div>
+                
+              </div>
+          </div>
+        </div> 
+    </section>
+
+    <hr class="">
+
+    <section class="container my-5">
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Description</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Additional Information</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Review</button>
+        </li>
+      </ul>
+    
+      <div class="tab-content pt-4" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <h2>Product description</h2>
+          <p id="description"></p>
+       
+          <div id="related-products">
+            <h2>Related products</h2>
+            <div class="container">
+              <div class="row g-3" id="relatedproducts">
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div id="table">
+            <table class="table table-bordered  ">
+                <tbody id="tableBody">
+                </tbody>
+              </table>
+
+          </div>
+          <div id="related-products">
+            <h2>Related products</h2>
+            <div class="container">
+              <div class="row g-3" id="relatedproduct">
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+        
+
+          <div>
+          
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Your review </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="Name *" class="form-label">Name </label>
+              <input type="text" class="form-control" id="Name" placeholder="Name ">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            
+<button  class="btn btn-primary  " >Submit</button>
+
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    <hr >
+  <section class="preFooter container">
+    <h3 style="cursor: pointer;" class="py-5 hover_blue">SALE UP TO 70% OFF FOR ALL CLOTHES & FASHION ITEMS, ON ALL BRANDS.
+    </h3>
+  </section>
+  <hr >
+  <footer class="px-5">
+    <div class="container-fluid  mt-2 py-5">
+    <div class="row">
+      <div class="col-md-3 text-md-start text-center my-md-2 px-5 my-3">
+        <h5 class="">The best look anytime, anywhere</h5>
+      </div>
+      <div class="col-md-3 text-md-start text-center my-md-2 px-5 my-3"><h6>Laptops & Mobile</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class=" text-decoration-none">Gaming Laptops</a></li>
+          <li><a href="#" class=" text-decoration-none py-3">Ultrabooks</a></li>
+          <li><a href="#" class=" text-decoration-none">Android Phones</a></li>
+          <li><a href="#" class=" text-decoration-none py-3">iPhones</a></li>
+          <li><a href="#" class=" text-decoration-none">Laptop Accessories</a></li>
+       
+        </ul>
+  
+      </div>
+      <div class="col-md-3 text-md-start text-center my-md-2 px-5 my-3">
+        <h6>Gaming & Appliances</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class=" text-decoration-none">Gaming Consoles</a></li>
+          <li><a href="#" class=" text-decoration-none">Gaming Headsets</a></li>
+          <li><a href="#" class=" text-decoration-none">Smart TVs</a></li>
+          <li><a href="#" class=" text-decoration-none">Home Appliances</a></li>
+          <li><a href="#" class=" text-decoration-none">Speakers & Audio Systems</a></li>
+       
+        </ul>
+      </div>
+      <div class="col-md-3 text-md-start text-center my-md-2 px-5 my-3">
+        <h6>Subscribe</h6>
+        <form>
+          <div class="mb-3 ">
+            
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+           
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+  
+      </div>
+    </div>
+  </div>
+  <hr>
+  
+  <div class="container">
+    <div class="row">
+     <div class="col-6 ">Copyright © 2025 Brandstore. Powered by ITI.</div>
+     <div class="col-6 " style="font-size: 20px;">
+  
+      <i style=" color: #fff;" class="bi bi-facebook px-3"></i>
+      <i class="fa-brands fs-2 fa-youtube"></i>
+      <i class="fa-brands fs-2 fa-x-twitter px-3"></i>
+      <i class="fa-brands fs-2 fa-instagram "></i>
+      <i class="fa-brands fs-2 fa-google ps-3"></i>
+     </div>
+    </div>
+    
+  
+  </div>
+  </footer>
+  
+
+    
+    <script src="../js/bootstrap.bundle.min.js"></script> 
+    <script src="../js/CartCounter.js"></script> 
+    <script src="../js/showDetails.js"></script>
+  </body>
+</html>

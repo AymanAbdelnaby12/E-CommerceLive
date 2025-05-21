@@ -1,0 +1,171 @@
+
+body {
+    background-color: #f8f9fa;
+}
+.cart-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #444;
+}
+.table img {
+    width: 60px;
+    height: auto;
+}
+.coupon-section input {
+    width: 200px;
+    display: inline-block;
+}
+.coupon-section button {
+    margin-left: 10px;
+}
+.cart-totals {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.cart-totals h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+} 
+.coupon{
+    width:30%;
+} 
+
+
+
+.navbar .btn-primary
+{
+    background-color: #D10024e6;
+    color: white;
+    border: solid 1px #D10024e6;
+    border-color:red ;
+    border-radius: 25px;
+    
+   }
+   .navbar  .btn-primary:hover
+   {
+       border-color:red ;
+       background-color: #fff;
+       color: red;
+   }
+   .navbar #searchButton
+   {
+       border-color: #D10024e6;
+       background-color: #D10024e6;
+       color: #fff !important
+   }
+
+.navbar .nav-item a:hover
+{
+   color: #D10024e6 !important;
+}
+.navbar .nav-item 
+{
+   position: relative;
+}
+.navbar .nav-item a
+{
+   font-size: 1.3rem;
+   font-weight: 600;
+   color: #fff !important;
+}
+.navbar .nav-item a::after 
+{
+   content: '';
+   position: absolute;
+   /* top:0; */
+   left: -4%;
+   bottom: 0;
+   width: 70%;
+   height: 3px;
+   background-color: #D10024e6;
+   opacity: 0;
+   transition: all .3s ease-in-out;
+}
+.navbar .nav-item a:hover::after
+{
+   opacity: 1;
+   left: -5%; 
+    transform: translateX(13px);
+}
+.navbar .nav-item span
+{
+   width: 20px;
+   height: 20px;
+   background-color: #D10024e6 !important;
+}
+.collapse
+{
+   background-color: #15161D !important;
+}
+nav
+{
+   background-color: #15161D !important;
+}
+.navbar-brand
+{
+    color: #fff !important;
+}
+.navbar-toggler
+{
+    
+    background-color: #fff;
+}
+
+
+footer
+{
+    background-color: #15161D;
+    color: #fff;
+}
+footer i
+{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+footer i:hover
+{
+    color: #D10024e6;
+}
+footer ul,h5,h6
+{
+    font-size: 23px;
+}
+
+footer .list-unstyled li a
+{
+    transition: all .4s;
+    
+    color: rgb(176, 174, 174);
+}
+footer .list-unstyled li a:hover
+{
+    color: #D10024e6;
+}
+
+.card-header
+{
+    background-color: #15161D;
+    color: #fff;
+}
+.border-danger
+{
+    border: solid 1px #D10024e6 !important;
+    border-color: #D10024e6 !important;
+}
+.checkout-btn
+{
+color: #fff;
+}
+.checkout-btn:hover
+{
+    color: #fff;
+}
